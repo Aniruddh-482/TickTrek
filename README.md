@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+<div align='center'>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎯 TickTrek – Simple. Efficient. Organized.
+<!-- # 🎯 TickTrek
+![ticktrek-logo](https://github.com/Aniruddh-482/TickTrek/assets/your-image-id-if-you-upload-one) -->
+A lightweight yet powerful task manager designed for simplicity and versatility. Built using React and TypeScript, TickTrek helps individuals and teams stay on track — whether it's for software projects, gym routines, or everyday task planning.
 
-Currently, two official plugins are available:
+## ✨ Features
+| Feature                   | Status         |
+| ------------------------ | -------------- |
+| 📝 Task Creation         | ✅ Implemented |
+| 📋 Task Display (Cards)  | ✅ Implemented |
+| 🔄 Reset Task Form       | ✅ Implemented |
+| 📅 Due Date Support      | ✅ Implemented |
+| 🟢 Status & Priority     | ✅ Implemented |
+| 💄 Clean UI w/ Tailwind  | ✅ Implemented |
+| 🧠 Smart UI Ideas (Planned) | 🔜 Next Phase |
+| 📊 Table View            | 🔜 Planned     |
+| 🧩 Component Reuse       | 🔜 Next Phase  |
+| 🔘 Floating Add Button   | 🔜 Next Phase  |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## Expanding the ESLint configuration
+## 🧩 Who Can Use TickTrek?
+Whether you're:
+- 🧑‍💻 A developer managing project sprints  
+- 🏋️ A fitness coach organizing training plans  
+- 🎯 A corporate team handling goals  
+- 🎓 A student tracking study or assignment deadlines  
+- 📋 Or just someone who loves staying organized...  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+TickTrek is flexible, minimal, and built to adapt.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ How to Run Locally
+```bash
+# Clone the repository
+git clone https://github.com/Aniruddh-482/TickTrek.git
+cd TickTrek
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# The app will be live at:
+http://localhost:3000
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Future Scope
+* Transform Add Task UI into a floating "Compose" style button
+* Use advanced component reuse for inputs and buttons
+* Add a sortable, filterable task table
+* Explore localStorage or database integration for persistence
+* Add task category/grouping system
+* Improve responsiveness and accessibility
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🙌 Contributors
+Made with ❤️ by:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  <a href="https://github.com/Aniruddh-482/TickTrek/graphs/contributors">
+    <img src="https://contributors-img.web.app/image?repo=Aniruddh-482/TickTrek" />
+  </a>
+
+    Special thanks to React, TypeScript, and TailwindCSS.
+
+---
+
+🚀 Found this project useful or interesting?
+Feel free to give it a ⭐ — it really helps a beginner grow!

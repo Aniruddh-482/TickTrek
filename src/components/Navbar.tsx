@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
     return (
@@ -8,10 +9,13 @@ const Navbar: React.FC = () => {
                 <div className="text-white text-lg font-bold">{"{ / } tickTrek"}</div>
                 <ul className="flex space-x-4">
                     <li>
-                        <a href="/" className="text-white hover:text-gray-300">Home</a>
+                        <Link to="/dashboard" className="text-white hover:text-gray-300">Dashboard</Link>
                     </li>
                     <li>
-                        <a href="/dashboard" className="text-white hover:text-gray-300">Dashboard</a>
+                        <Link to="/tasks/:taskId" className="text-white hover:text-gray-300">Tasks</Link>
+                    </li>
+                    <li>
+                        <Link to="/" className="text-white hover:text-gray-300">Login/Logout</Link>
                     </li>
                 </ul>
             </div>
